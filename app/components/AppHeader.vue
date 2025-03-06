@@ -1,62 +1,37 @@
-<script setup lang="ts">
-const nuxtApp = useNuxtApp()
-const { activeHeadings, updateHeadings } = useScrollspy()
-
-const items = computed(() => [{
-  label: 'Features',
-  to: '#features',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
-}, {
-  label: 'Pricing',
-  to: '#pricing',
-  active: activeHeadings.value.includes('pricing')
-}, {
-  label: 'Testimonials',
-  to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
-}])
-
-nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#pricing'),
-    document.querySelector('#testimonials')
-  ])
-})
-</script>
-
 <template>
   <UHeader>
     <template #left>
       <NuxtLink to="/">
-        <LogoPro class="w-auto h-6 shrink-0" />
+        <img
+          src="/vuejs-amd.svg"
+          class="h-10 w-10"
+        >
       </NuxtLink>
-
-      <TemplateMenu />
     </template>
 
     <template #right>
-      <UNavigationMenu
-        :items="items"
-        variant="link"
-        class="hidden lg:block"
-      />
-
       <UButton
-        label="Download App"
+        label="Slides"
         variant="subtle"
         class="hidden lg:block"
+        to="https://mes-slides.fr"
       />
+
+      <UTooltip text="Open on GitHub">
+        <UButton
+          color="neutral"
+          variant="ghost"
+          to="https://github.com/larbish/amd2025"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
+        />
+      </UTooltip>
 
       <UColorModeButton />
     </template>
 
     <template #body>
-      <UNavigationMenu
-        :items="items"
-        orientation="vertical"
-        class="-mx-2.5"
-      />
       <UButton
         class="mt-4"
         label="Download App"
