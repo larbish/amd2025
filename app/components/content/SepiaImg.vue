@@ -1,11 +1,12 @@
 <template>
-  <UPageSection>
-    <img
-      v-if="src"
+  <div class="flex justify-center items-center">
+    <NuxtImg
       class="rounded-3xl sepia"
       :src="src"
-    >
-  </UPageSection>
+      alt="Placeholder"
+      height="320"
+    />
+  </div>
 </template>
 
 <script lang="ts" setup>
