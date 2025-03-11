@@ -4,7 +4,7 @@
       class="rounded-3xl sepia"
       :src="src"
       alt="Placeholder"
-      height="320"
+      width="500"
     />
   </div>
 </template>
