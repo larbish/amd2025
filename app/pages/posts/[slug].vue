@@ -12,9 +12,7 @@ const route = useRoute()
 
 const { data } = await useAsyncData(route.path, () => Promise.all([
   queryCollection('posts').path(route.path).first(),
-  queryCollectionItemSurroundings('posts', route.path, { fields: ['title', 'description'] })
-    .where('published', '=', 1)
-    .order('date', 'DESC')
+  queryCollectionItemSurroundings('posts', route.path, { fields: ['title', 'description'] }).order('date', 'DESC')
 ]), {
   transform: ([page, surround]) => ({ page, surround })
 })
@@ -73,8 +71,8 @@ const links = [
             />
             <div class="flex items-center gap-3">
               <UBadge
-                v-if="post.category"
-                :label="titleCase(post.category)"
+                v-if="post.badge"
+                :label="titleCase(post.badge.label)"
                 variant="outline"
                 color="neutral"
               />

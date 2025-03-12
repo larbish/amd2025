@@ -19,5 +19,28 @@ export const collections = {
         content: z.string().nonempty()
       }))
     })
+  }),
+  posts: defineCollection({
+    type: 'page',
+    source: 'posts/*.md',
+    schema: z.object({
+      authors: z.array(z.object({
+        username: z.string(),
+        name: z.string(),
+        to: z.string(),
+        avatar: z.object({
+          src: z.string(),
+          alt: z.string()
+        })
+      })),
+      badge: z.object({
+        label: z.string()
+      }),
+      date: z.date(),
+      image: z.object({
+        src: z.string().editor({ input: 'media' }),
+        alt: z.string()
+      })
+    })
   })
 }
