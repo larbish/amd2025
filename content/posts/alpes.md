@@ -4,7 +4,7 @@ description: Journey through the heart of the Alps, where towering peaks, serene
   valleys, and a rich cultural legacy create an awe-inspiring landscape waiting
   to be explored.
 image:
-  src: /mountains/alpes.png
+  src: /mountains/alpes.jpg
 authors:
   - name: Alexia wong
     to: https://twitter.com/benjamincanac
