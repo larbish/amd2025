@@ -14,7 +14,7 @@
         label="Slides"
         variant="subtle"
         class="hidden lg:block"
-        to="https://mes-slides.fr"
+        to="https://amd2025slides.vercel.app"
       />
 
       <UTooltip text="Open on GitHub">
