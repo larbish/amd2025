@@ -1,5 +1,5 @@
 {
-  "title": "FAQ",
+  "title": "Frequently Asked Questions",
   "subtitle": "All questions you have about Nuxt Content",
   "questions": [
     {
@@ -13,6 +13,10 @@
     {
       "label": "Does Nuxt Content support SEO?",
       "content": "Yes, Nuxt Content is optimized for SEO. It allows you to set meta tags, descriptions, and structured data for better indexing by search engines."
+    },
+    {
+      "label": "Was this talk great? ",
+      "content": "I hope so! I was happy to be there!"
     }
   ]
 }
