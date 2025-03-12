@@ -1,5 +1,5 @@
 ---
-image: /mountains/alpes.jpg
+image: /mountains/pyrenees.webp
 ---
 
 ::u-page-hero
