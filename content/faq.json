@@ -1,11 +1,7 @@
 {
-  "title": "FAQ",
+  "title": "Frequently Asked Questions",
   "subtitle": "All questions you have about Nuxt Content",
   "questions": [
-    {
-      "label": "What is Nuxt Content?",
-      "content": "Nuxt Content is a module for Nuxt that provides a simple way to manage content for your application. It allows developers to write their content in Markdown, YAML, CSV or JSON files and then query and display it in their application."
-    },
     {
       "label": "How does Nuxt Content work?",
       "content": "Nuxt Content uses a file-based approach to content management, allowing developers to create and edit content in Markdown, JSON, or other structured formats. It then provides a query engine to fetch and display content dynamically in Nuxt applications."
@@ -13,6 +9,10 @@
     {
       "label": "Does Nuxt Content support SEO?",
       "content": "Yes, Nuxt Content is optimized for SEO. It allows you to set meta tags, descriptions, and structured data for better indexing by search engines."
+    },
+    {
+      "label": "How was the talk?",
+      "content": "Not too bad I hope."
     }
   ]
 }
