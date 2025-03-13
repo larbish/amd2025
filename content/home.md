@@ -1,13 +1,13 @@
 ---
-image: /mountains/clouds-mountains.jpg
+image: /mountains/pyrenees.webp
 ---
 
 ::u-page-hero
 #title
-Hello Amsterdam !
+The new Nuxt Content
 
 #description
-Happy to be here 🚀
+VueJS Amsterdam 2025
 ::
 
 ::sepia-img{:src="image"}
