@@ -13,6 +13,7 @@
       <UButton
         label="Slides"
         variant="subtle"
+        target="_blank"
         class="hidden lg:block"
         to="https://amd2025slides.vercel.app"
       />
